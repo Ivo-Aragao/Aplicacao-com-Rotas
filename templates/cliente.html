@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Cliente</title>
+</head>
+<body>
+    <h1>Detalhes do Cliente</h1>
+    {% if cliente %}
+    <p><strong>Nome:</strong> {{ cliente.nome }}</p>
+    <p><strong>cpf:</strong> {{ cliente.cpf }}</p>
+    <p><strong>telefone:</strong> {{ cliente.telefone }}</p>
+    <p><strong>Email:</strong> {{ cliente.email }}</p>
+    {% else %}
+    <p>Cliente não encontrado.</p>
+    {% endif %}
+</body>
+</html>
